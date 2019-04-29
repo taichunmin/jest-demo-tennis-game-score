@@ -1,0 +1,8 @@
+{
+  "name": "jest-demo-tennis-game-score",
+  "version": "1.0.0",
+  "description": "Jest Demo For Tennis Game Score",
+  "main": "index.js",
+  "author": "taichunmin@gmail.com",
+  "license": "MIT"
+}
