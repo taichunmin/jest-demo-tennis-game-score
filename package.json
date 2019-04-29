@@ -4,5 +4,8 @@
   "description": "Jest Demo For Tennis Game Score",
   "main": "index.js",
   "author": "taichunmin@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.7.1"
+  }
 }
