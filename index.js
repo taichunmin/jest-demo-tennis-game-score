@@ -10,7 +10,7 @@ exports.score = (pa, pb) => {
 
   if (exports.isDeuce(pa, pb)) return 'Deuce.'
 
-  if (exports.isSameScore(pa, pb)) return `${SCORE_STR[pa]}-all`
+  if (exports.isAll(pa, pb)) return `${SCORE_STR[pa]}-all`
   return `${SCORE_STR[pa]}-${SCORE_STR[pb]}`
 }
 
@@ -20,4 +20,4 @@ exports.isAdvantage = (pa, pb) => pa >= 3 && pb >= 3 && pa === pb + 1
 
 exports.isDeuce = (pa, pb) => pa >= 3 && pa === pb
 
-exports.isSameScore = (pa, pb) => pa === pb
+exports.isAll = (pa, pb) => pa < 3 && pa === pb
