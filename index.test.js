@@ -1,7 +1,10 @@
 const TennisGameScore = require('./index')
 
 test.each([
-  [0, 0, 'love-all']
-])('Point 是 %d:%d 的時候 Score 應該是 %s', (pa, pb, expected) => {
+  [0, 0, 'love-all'],
+  [1, 0, '15-love'],
+  [3, 0, '40-love'],
+  [0, 3, 'love-40'],
+])('比數是 %d:%d 的時候應該顯示 %s', (pa, pb, expected) => {
   expect(TennisGameScore.score(pa, pb)).toEqual(expected)
 })
